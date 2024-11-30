@@ -11,3 +11,67 @@ body {
     font-family: verdana;
     font-size: 20px;
   }
+
+/* Stila noteikumi sadaļai */
+#popular-services {
+  text-align: center;
+  padding: 20px;
+  background-color: lightblue; /* Gaiši zils fons */
+  overflow: hidden;
+  font-family: Arial, sans-serif; /* Vienkārša un profesionāla fonta izvēle */
+}
+
+/* Pielāgot horizontālās ritināšanas joslas stilu */
+.scroll-container {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 10px;
+
+  /* Paslēpt standarta ritināšanas joslu, bet saglabāt funkcionalitāti */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
+.services-container {
+  display: flex;
+  gap: 30px; /* Palielina atstarpi starp kartītēm */
+  animation: scrollLeft 10s linear infinite; /* Pievienota animācija */
+}
+
+.service-card {
+  background: #e3f2fd; /* Maigs zils tonis kartītēm */
+  border-radius: 12px; /* Vairāk noapaļoti stūri */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Kartītēm piešķirts neliels ēnojums */
+  width: 320px; /* Kartītes platums */
+  padding: 15px;
+  text-align: center;
+  flex-shrink: 0; /* Neļauj elementiem sarauties */
+  transition: transform 0.3s ease; /* Pievieno animāciju, kad kursors atrodas virs kartītes */
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Kartīte palielinās, kad kursoru uzliek uz tās */
+}
+
+.service-card img {
+  width: 300px; /* Attēla platums */
+  height: 150px; /* Attēla augstums */
+  object-fit: cover; /* Nodrošina, ka attēls vienmēr ir pilnībā aizpildīts */
+  border-radius: 12px; /* Noapaļoti stūri */
+  margin-bottom: 10px; /* Atstarpe starp attēlu un tekstu */
+}
+
+.service-card h3 {
+  margin-top: 10px;
+  font-size: 16px; /* Teksta lielums */
+  font-weight: bold; /* Bold teksts */
+  color: #333; /* Tumši pelēka krāsa tekstam */
+}
