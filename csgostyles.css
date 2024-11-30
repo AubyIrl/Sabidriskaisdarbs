@@ -12,16 +12,15 @@ body {
     font-size: 20px;
   }
 
-/* Stila noteikumi sadaļai */
+
 #popular-services {
   text-align: center;
   padding: 20px;
-  background-color: lightblue; /* Gaiši zils fons */
+  background-color: lightblue; 
   overflow: hidden;
-  font-family: Arial, sans-serif; /* Vienkārša un profesionāla fonta izvēle */
+  font-family: Arial, sans-serif; 
 }
 
-/* Pielāgot horizontālās ritināšanas joslas stilu */
 .scroll-container {
   position: relative;
   width: 100%;
@@ -30,7 +29,6 @@ body {
   white-space: nowrap;
   padding-bottom: 10px;
 
-  /* Paslēpt standarta ritināšanas joslu, bet saglabāt funkcionalitāti */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
@@ -42,36 +40,36 @@ body {
 
 .services-container {
   display: flex;
-  gap: 30px; /* Palielina atstarpi starp kartītēm */
-  animation: scrollLeft 10s linear infinite; /* Pievienota animācija */
+  gap: 30px; 
+  animation: scrollLeft 10s linear infinite; 
 }
 
 .service-card {
-  background: #e3f2fd; /* Maigs zils tonis kartītēm */
-  border-radius: 12px; /* Vairāk noapaļoti stūri */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Kartītēm piešķirts neliels ēnojums */
-  width: 320px; /* Kartītes platums */
+  background: #e3f2fd; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+  width: 320px; 
   padding: 15px;
   text-align: center;
-  flex-shrink: 0; /* Neļauj elementiem sarauties */
-  transition: transform 0.3s ease; /* Pievieno animāciju, kad kursors atrodas virs kartītes */
+  flex-shrink: 0; 
+  transition: transform 0.3s ease; 
 }
 
 .service-card:hover {
-  transform: scale(1.05); /* Kartīte palielinās, kad kursoru uzliek uz tās */
+  transform: scale(1.05)
 }
 
 .service-card img {
-  width: 300px; /* Attēla platums */
-  height: 150px; /* Attēla augstums */
-  object-fit: cover; /* Nodrošina, ka attēls vienmēr ir pilnībā aizpildīts */
-  border-radius: 12px; /* Noapaļoti stūri */
-  margin-bottom: 10px; /* Atstarpe starp attēlu un tekstu */
+  width: 300px;
+  height: 150px; 
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px; 
 }
 
 .service-card h3 {
   margin-top: 10px;
-  font-size: 16px; /* Teksta lielums */
-  font-weight: bold; /* Bold teksts */
-  color: #333; /* Tumši pelēka krāsa tekstam */
+  font-size: 16px; 
+  font-weight: bold; 
+  color: #333; 
 }
